@@ -1,0 +1,327 @@
+{
+  "info": {
+    "_postman_id": "5d24356c-3845-4bb9-8b97-5c2878e555ba",
+    "name": "PostmanCollection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53962460",
+    "_collection_link": "https://go.postman.co/collection/53962460-5d24356c-3845-4bb9-8b97-5c2878e555ba?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n        {\r\n            \"title\": \"DEVASC Midterm Room\"\r\n        }    ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://webexapis.com/v1/rooms",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "rooms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://webexapis.com/v1/messages",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n        {\r\n            \"roomId\": \"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vM2E1Y2M5OTAtNjg1ZS0xMWYxLTliYTEtYmRjMmYxOTdjZTMz\",\r\n            \"text\": \"Hello from Postman\"\r\n        }    ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://webexapis.com/v1/messages",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "messages"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://webexapis.com/v1/messages/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FU1NBR0UvZDlkNjIyYTAtNjg1ZS0xMWYxLTkwMD",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"roomId\": \"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vM2E1Y2M5OTAtNjg1ZS0xMWYxLTliYTEtYmRjMmYxOTdjZTMz\",\r\n    \"text\": \"Edited Message\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://webexapis.com/v1/messages/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FU1NBR0UvZDlkNjIyYTAtNjg1ZS0xMWYxLTkwMDAtMzVhYjc4Y2Y1NTk2",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "messages",
+            "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FU1NBR0UvZDlkNjIyYTAtNjg1ZS0xMWYxLTkwMDAtMzVhYjc4Y2Y1NTk2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://webexapis.com/v1/memberships",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"roomId\": \"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vM2E1Y2M5OTAtNjg1ZS0xMWYxLTliYTEtYmRjMmYxOTdjZTMz\",\r\n    \"personEmail\": \"kakui.ryota12@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://webexapis.com/v1/memberships",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "memberships"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://webexapis.com/v1/rooms/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vM2E1Y2M5OTAtNjg1ZS0xMWYxLTliYTEtYmRjM",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://webexapis.com/v1/rooms/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vM2E1Y2M5OTAtNjg1ZS0xMWYxLTliYTEtYmRjMmYxOTdjZTMz",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "rooms",
+            "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vM2E1Y2M5OTAtNjg1ZS0xMWYxLTliYTEtYmRjMmYxOTdjZTMz"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://webexapis.com/v1/meetings",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\" : \"DevOps Midterm Meeting\",\r\n    \"start\" : \"2026-06-20T08:00:00Z\",\r\n    \"end\" : \"2026-06-20T09:00:00Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://webexapis.com/v1/meetings",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "meetings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://webexapis.com/v1/meetings",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\" : \"DevOps Midterm Meeting\",\r\n    \"start\" : \"2026-06-20T08:00:00Z\",\r\n    \"end\" : \"2026-06-20T09:00:00Z\"\r\n}"
+        },
+        "url": {
+          "raw": "https://webexapis.com/v1/meetings",
+          "protocol": "https",
+          "host": [
+            "webexapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "meetings"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_secret_0l3t",
+      "secret": true
+    },
+    {
+      "key": "Yzc1NGYzMTUtZDc0NC00OTEwLTg2ZjQtYTdkMjY4NWFlOTY1YzI1MTk5OGItMTMz_PS65_8ff5927a-d061-410c-b007-22c452dfde0c",
+      "secret": true
+    }
+  ]
+}
